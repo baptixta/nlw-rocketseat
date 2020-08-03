@@ -21,6 +21,16 @@
     font-size: 60%; /* controle das medidas rem */
 }
 
-body {
-    background-color: var(--color-primary);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    align-items: center;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+}
+
