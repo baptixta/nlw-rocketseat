@@ -27,10 +27,26 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100vh;
+}
+
 body {
     align-items: center;
-    background-color: var(--color-primary);
+    background-color: var(--color-background);
     display: flex;
     justify-content: center;
 }
 
+body,
+input,
+button,
+textarea {
+    font: 500 1.6rem Poppins;
+    color: var(--color-text-base);
+}
+
+#container {
+    max-width: 700px;
+    width: 90vw;
+}
