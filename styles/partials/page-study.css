@@ -3,46 +3,6 @@
     width: 100vw;
 }
 
-.page-header {
-    background-color: var(--color-primary);
-    display: flex;
-    flex-direction: column;
-}
-
-.page-header .top-bar-container {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 1.6rem 0;
-    width: 90%;
-}
-
-.page-header .top-bar-container a {
-    height: 3.2rem;
-    transition: opacity .3s ease;
-}
-
-.page-header .top-bar-container a:hover {
-    opacity: .6;
-}
-
-.page-header .top-bar-container img {
-    height: 1.6rem;
-}
-
-.page-header .header-content {
-    margin: 3.2rem auto;
-    position: relative;
-    width: 90%;
-}
-
-.page-header .header-content strong {
-    color: var(--color-title-in-primary);
-    font: 700 3.6rem Archivo;
-    line-height: 4.2rem;
-}
-
 #search-teachers {
     margin-top: 3.2rem;
 }
@@ -74,38 +34,6 @@
 
 #search-teachers button:hover {
     background-color: var(--color-secondary-dark);
-}
-
-.select-block label,
-.input-block label {
-    color: var(--color-text-complement);
-    font-size: 1.4rem;  
-}
-
-.input-block input,
-.select-block select {
-    background: var(--color-input-background);
-    border: 1px solid var(--color-input-background);
-    border-radius: .8rem;
-    height: 5.6rem;
-    margin-top: .8rem;
-    outline: 0;
-    padding: 0 1.6rem;
-    width: 100%;
-}
-
-.input-block {
-    position: relative;
-}
-
-.input-block:focus-within::after {
-    background: var(--color-primary-light);
-    bottom: 0;
-    content: '';
-    height: 2px;
-    right: 1.6rem;
-    position: absolute;
-    width: calc(100% - 3.2rem);
 }
 
 #page-study main {
