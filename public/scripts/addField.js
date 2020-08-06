@@ -12,7 +12,6 @@ function cloneField() {
     const fields = newFieldContainer.querySelectorAll('input')
 
     // Cleaning each field
-    
     /* For Loop version 
     for (let i = 0; i < fields.length; i++) {
         fields[i].value = ""

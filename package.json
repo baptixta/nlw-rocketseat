@@ -1,0 +1,26 @@
+{
+  "name": "nlw-rocketseat",
+  "version": "1.0.0",
+  "description": "Projeto realizado no NWL #2",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baptixta/nlw-rocketseat.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/baptixta/nlw-rocketseat/issues"
+  },
+  "homepage": "https://github.com/baptixta/nlw-rocketseat#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
