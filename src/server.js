@@ -27,25 +27,34 @@ const profs = [
     }
 ]
 
+function pageLanding(req, res) {
+    return res.render("index.html")
+}
+
+function pageStudy(req, res) {
+    return res.render("study.html")
+}
+
+function pageGiveClasses(req, res) {
+    return res.render("give-classes.html")
+}
+
 const express = require('express')
 const server = express()
 
-// Rodar a partir do diretório "public"
-server.use(express.static("public"))
-
-// Rota da aplicação
-.get("/", (req, res) => {
-    return res.sendFile(__dirname + "/views/index.html")
+// Configurar Nunjucks
+const nunjucks = require('nunjucks')
+nunjucks.configure('src/views', {
+    express: server,
+    noCache: true
 })
 
-// Rota da aplicação
-.get("/study", (req, res) => {
-    return res.sendFile(__dirname + "/views/study.html")
-})
 
-// Rota da aplicação
-.get("/give-classes", (req, res) => {
-    return res.sendFile(__dirname + "/views/give-classes.html")
-})
-
+server
+// Configurar arquivos estáticos (css, scripts, imagens)
+.use(express.static("public"))
+// Rotas da aplicação
+.get("/", pageLanding)
+.get("/study", pageStudy)
+.get("/give-classes", pageGiveClasses)
 .listen(5000)
