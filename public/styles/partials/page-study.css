@@ -104,7 +104,7 @@
     font-size: 1.6rem;
 }
 
-.teacher-item footer button {
+.teacher-item footer .button {
     align-items: center;
     background: var(--color-secondary);
     border: 0;
@@ -121,12 +121,12 @@
     width: 20rem;
 }
 
-.teacher-item footer button img {
+.teacher-item footer .button img {
     height: initial;
     width: initial;
 }
 
-.teacher-item footer button:hover {
+.teacher-item footer .button:hover {
     background: var(--color-secondary-dark);
 }
 
